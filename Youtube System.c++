@@ -17,7 +17,7 @@ public:
 };
 
 class Youtube : public Videos{
-    int subscribers = 1000;
+    static int subscribers;
 public:
     string channel;
     string owner = "Shiva Reddy";
@@ -49,6 +49,8 @@ public:
     }
 
 };
+
+int Youtube :: subscribers = 1000;
 
 int main(){
     Youtube run("Code Blodded");
